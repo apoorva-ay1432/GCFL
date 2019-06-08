@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+     int i,j,k,num;
+    scanf("%d",&num);
+    for(i=1;i<=num;i++)
+    {
+        for(j=1;j<=2*num;j++)
+        {
+            if(i>((num-j)+1))
+                printf(" ");
+            else
+                printf("*");
+            if((i+num)>j)
+                printf(" ");
+            else
+                printf("*");
+        }
+        printf("\n");
+    }
+    for(i=1;i<=num;i++)
+    {
+        for(j=1;j<=2*num;j++)
+        {
+            if(i<j)
+                printf(" ");
+            else
+                printf("*");
+            if(i<=((2*num)-j))
+                printf(" ");
+            else
+                printf("*");
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
