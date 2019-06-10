@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    int i,j,rows;
+    char str1[20];
+    gets(str1);
+    // puts(str1);
+    for(i=0;i<strlen(str1);i++)
+    {
+        for(j=0;j<=i;j++)
+        {
+            printf("%c",str1[j]);
+            // printf("*");
+        }
+        printf("\n");
+    }
+    for(i=strlen(str1);i>=0;i--)
+    {
+        for(j=0;j<=i;j++)
+        {
+            printf("%c",str1[j]);
+            // printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
