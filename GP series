@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    int a,r,n,term=1,rn=1;
+    scanf("%d",&a);
+    scanf("%d",&r);
+    scanf("%d",&n);
+    rn=pow(r,(n-1));
+    term=(a*(rn));
+    printf("%d",term);
+
+    return 0;
+}
