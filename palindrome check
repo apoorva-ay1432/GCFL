@@ -1,0 +1,14 @@
+#PALINDROME
+def reverse(st):
+    str=""
+    for i in st:
+        str= i+ str
+    return str
+string_in = input("string : ")
+print(string_in)
+string_rev = reverse(string_in)
+print(string_rev)
+if string_in==string_rev:
+    print("palindrome")
+else:
+    print("NOT")
