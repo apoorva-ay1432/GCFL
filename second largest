@@ -1,0 +1,5 @@
+n=list(map(int, input().split()))
+print(n)
+print(sorted(n,reverse=True))
+n1 = list(map(int,sorted(n,reverse=True)))
+print(n1[1])
